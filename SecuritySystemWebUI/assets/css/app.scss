@@ -1,0 +1,14 @@
+﻿$primary-color: #2a3f54;
+$primary-green-color: #2ecc71;
+$primary-blue-color: #3498db;
+
+@import 'bootstrap/_bootstrap.scss';
+@import 'animate.css';
+@import 'app/main.scss';
+@import 'app/_flaticon.scss';
+@import 'app/forms.scss';
+@import 'app/navbar.scss';
+@import 'app/panel.scss';
+@import 'app/graphs.scss';
+@import 'app/buttons.scss';
+@import 'app/login.scss';

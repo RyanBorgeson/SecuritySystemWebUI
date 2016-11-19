@@ -1,0 +1,110 @@
+﻿.form-group {
+
+    .form-control {
+        background: #fff;
+        box-shadow: 0 0 10px #e0e0e0;
+        border-radius: 0;
+        border: 1px solid #ddd;
+    }
+
+}
+.shopping-cart {
+    .form-cart {
+        border: 0;
+        box-shadow: 0;
+        width: 100%;
+    }
+    input[type="number"] {
+        text-align: center;
+        max-width: 80px;
+    }
+    .discount-modal {
+        input[type="number"] {
+            max-width: 100%;
+            text-align: left;
+        }
+    }
+    tr:hover .form-cart {
+        background: #f5f5f5;
+    }
+    .form-cart:focus {
+        border: 0;
+        outline: none;
+    }
+}
+
+form {
+    .alert {
+        border-radius: 0 0 5px 5px;
+        padding: 5px 10px 5px 10px;
+        font-size: 12px;
+    }
+    .button-loader {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+}
+
+label {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.input-group {
+    .glyphicon {
+        margin-left: 10px;
+    }
+}
+
+.input-dropdown {
+    .dropdown-menu {
+        width: 100%;
+        font-size: 13px;
+
+        li a:hover {
+            background: #666;
+            color: #fff;
+            margin: 0;
+        }
+        li a .basic-info {
+            color: #999;
+        }
+        li a:hover .basic-info {
+            color: #fff;
+        }
+        .text-danger, .text-warning {
+            padding-left: 10px;
+        }
+    }
+}
+
+/** Data Picker Style **/
+.ui-datepicker-title {
+	background: #25a25a;
+}
+.ui-widget-header {
+	background: #25a25a !important;
+	color: #fff !important;
+	border-radius: 0 !important;
+	margin: -5px;
+}
+.ui-datepicker-calendar, .ui-datepicker {
+	background: #fff !important;
+}
+.ui-datepicker {
+	box-shadow: 0 0 10px #999;
+}
+.ui-datepicker-prev, .ui-datepicker-next {
+    margin: 1px;
+    background: darken(#25a25a, 5%) !important;
+}
+
+.ui-datepicker-prev:hover {
+    background: darken(#25a25a, 10%) !important;
+    border: 0;
+}
+.ui-datepicker-next:hover {
+    background: darken(#25a25a, 10%) !important;
+    border: 0;
+}

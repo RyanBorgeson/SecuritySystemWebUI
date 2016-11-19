@@ -1,0 +1,27 @@
+﻿.navbar {
+    background: #3498db;
+    width: 80%;
+    margin: 0 auto;
+    border: 0;
+    height: 40px;
+    border-radius: 0;
+    z-index: 255;
+    font-size: 13px;
+    color: #fff;
+
+    .navbar-nav a {
+        color: #fff !important;
+    }
+    .navbar-brand {
+        color: #fff !important;
+    }
+    .navbar-nav a:hover {
+        background: #3498db !important;
+        color: #fff !important;
+        border-bottom: 1px solid #fff;
+        //box-shadow: 0 0 5px lighten(#3498db, 10%);
+        //padding: 10px;
+        //margin: 5px;
+        //border-radius: 5px;
+    }
+}

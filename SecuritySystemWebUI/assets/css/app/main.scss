@@ -1,0 +1,225 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600);
+
+body, html {
+    margin: 0;
+    background: #f1f1f1;
+        -webkit-font-smoothing: antialiased;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+
+.header-container {
+
+    width: 100%;
+    background: #3498db;
+    min-height: 420px;
+    color: #fff;
+}
+.content-container {
+    width: 70%;
+    margin: 20px auto;
+    color: #666;
+}
+
+.chart-container {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.wrapper {
+    width: 60%;
+
+    .content-container {
+        padding: 0 5px 0 5px;
+    }
+    
+    .navmenu {
+        float: left;
+        width: 200px;
+        position: fixed;
+        font-family: "Open Sans", sans-serif !important;
+        height: 100vh;
+        z-index: 255;
+        box-shadow: 0 0 10px #e3e3e3;
+        color: #fff;
+
+        .navmenu-head {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 12px;
+            padding: 20px 0 5px 15px;
+            font-weight: 600;
+        }
+        
+        .menu {
+            a {
+                font-size: 13px;
+                display: block;
+                padding: 8px 20px;
+                color: #fff;
+
+                .glyphicon {
+                    margin-right: 15px;
+                }
+            }
+            a:first-of-type {
+            }
+            a:hover, a:active, a:focus {
+                text-decoration: none;
+                background: #f4f4f4;
+            }
+            a:active, a:focus, .active {
+                background: #f5f5f5;
+                border-right: 1px solid #000;
+                color: #000;
+                font-weight: 600;
+            }
+            
+        }
+        .logo img {
+            margin: 0 0 50px 25px;
+            width: 150px;
+            height: 75px;
+        }
+        .logo {
+            height: 50px;
+            background: darken(#2ecc71, 10%);
+            width: 200px;
+            display: block;
+            margin-bottom: 18px;
+            padding: 10px 35px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-style: italic;
+            color: #fff;
+        }
+        .logo:hover, .logo:focus, .logo:active {
+            text-decoration: none;
+        }
+    }
+    .column-right {
+        //background: url(/assets/images/lightpaperfibers.png) #fff;
+        background: #f4f4f4;
+        float: right;
+        position: absolute;
+        min-height: 100vh;
+        
+        width: 100%;
+
+        .content {
+           margin-left: 200px;
+        }
+    }
+}
+
+
+.dropdown-menu {
+    border-radius: 5px;
+    margin-top: 5px !important;
+    //border-top: 4px solid $primary-green-color;
+    border: 0;
+    
+
+    a {
+        color: #333 !important;
+    }
+    a:hover {
+        color: #fff !important;
+    }
+}
+.mr5 {
+    margin-right: 5px !important;
+}
+.basicStats {
+     background: darken($primary-green-color, 20%);
+}
+
+.alert-danger, .alert-warning {
+    padding: 10px;
+}
+.box {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.select-box:hover {
+    display: block;
+    color: #000;
+    cursor: pointer;
+}
+.box-negative {
+    padding-top: 10px;
+    background: #e0e0e0;
+
+    .glyphicon-large {
+        color: #e0e0e0;
+    }
+    
+}
+.box-negative:hover {
+    cursor: pointer;
+
+    .glyphicon-large {
+        color: $primary-blue-color;
+    }
+}
+
+.glyphicon, .fi  {
+    margin-right: 10px;
+}
+.glyphicon-single {
+    margin-right: 0 !important;
+}
+.glyphicon-large {
+    font-size: 28px;
+}
+
+.pd20 {
+    padding: 20px;
+}
+.col-padding {
+    padding: 0 30px 0 30px;
+}
+
+p {
+    color: #999 !important;
+    font-size: 12px !important;
+}
+.mt5 {
+    margin-top: 5px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt50 {
+    margin-top: 50px;
+}
+.mt100 {
+    margin-top: 100px;
+}
+.mr30 {
+    margin-right: 30px;
+}
+
+.loader {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.breadcrumb {
+    margin: -20px -5px 15px -5px;
+    border-radius: 0;
+    color: #666;
+}
+
+.tab-content {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: 0;
+}

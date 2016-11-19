@@ -1,0 +1,43 @@
+﻿<html>
+  <head>
+    <title>Security System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery-ui.css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+
+    <!-- 1. Load libraries -->
+    <script src="/assets/scripts/typescript.js"></script>
+    <script src="/assets/scripts/d3.v2.js"></script>
+    <script src="/assets/scripts/jquery.min.js"></script>
+    <script src="/assets/scripts/jquery-ui.min.js"></script>
+	<script src="/assets/scripts/bootstrap.min.js"></script>
+
+    <!-- Include library for DYMO Label printer -->
+    <script src="/lib/DYMO.Label.Framework.js"></script>
+
+     <!-- Polyfill(s) for older browsers -->
+    <script src="/node_modules/core-js/client/shim.min.js"></script>
+    <script src="/node_modules/zone.js/dist/zone.js"></script>
+    <script src="/node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="/systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+
+    <base href="/">
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <application>
+		<div class="loader">
+			Loading, Please wait...<br />
+		</div>
+	</application>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+﻿.dash-button {
+    display: block;
+    background: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid #ddd;
+
+    
+
+    .dash-glyph {
+        padding: 12px 0 0 18px;
+    }
+    .dash-border {
+        border-left: 1px solid #eee;
+    }
+
+    .dash-head {
+        font-size: 13px;
+
+    }
+}
+.dash-sell-item {
+    background: #ddd;
+    cursor: pointer;
+}

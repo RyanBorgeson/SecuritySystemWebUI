@@ -1,0 +1,33 @@
+﻿@keyframes FadeInAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadein {
+    animation: FadeInAnimation ease-in .2s;
+}
+@keyframes FadeDownAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    98% {
+        opacity: .4;
+    }
+    99% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fadedown {
+    animation: FadeDownAnimation ease-in .3s;
+}
+

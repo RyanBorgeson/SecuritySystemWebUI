@@ -1,0 +1,48 @@
+﻿<div class="header-container">
+
+
+
+    <nav class="navbar navbar-default navbar-fixed-top animated slideInDown">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Security System</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span>Overview</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-stats"></span>Sensor Readings</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Log Out</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="chart-container animated fadeIn">
+        <div line-chart id="LineChart" [Data]="Details"></div>
+    </div>
+
+
+</div>
+
+<div class="content-container animated fadeInUp">
+
+    <div class="row">
+        <div class="col-md-9">
+            <div class="panel">
+                <div class="panel-heading"><span class="glyphicon glyphicon-fire"></span>Temperature Logs</div>
+                <div class="panel-body">
+                    Temperature sensor information.
+                </div>
+            </div>    
+        </div>
+        <div class="col-md-3">
+            <div class="panel">
+                <div class="panel-heading"><span class="glyphicon glyphicon-th-list"></span>Sensors</div>
+                <div class="panel-body">
+                    
+                </div>
+            </div>  
+        </div>
+    </div>
+
+</div>
