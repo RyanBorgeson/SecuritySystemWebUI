@@ -5,7 +5,7 @@
     <nav class="navbar navbar-default navbar-fixed-top animated slideInDown">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Security System</a>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-stats"></span>Security System</a>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
@@ -32,6 +32,20 @@
                 <div class="panel-heading"><span class="glyphicon glyphicon-fire"></span>Temperature Logs</div>
                 <div class="panel-body">
                     Temperature sensor information.
+                    <br /><br />
+
+                    <table class="table table-hover">
+                        <thead>
+                            <th>Temperature</th>
+                            <th>Time</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let Temp of Details">
+                                <td>{{ Temp.AmbientLight }}</td>
+                                <td>{{ Temp.TimeStamp | date: 'medium' }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>    
         </div>

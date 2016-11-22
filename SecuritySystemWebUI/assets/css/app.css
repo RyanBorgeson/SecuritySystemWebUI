@@ -5984,17 +5984,6 @@ p {
   margin-top: 200px;
   text-align: center; }
 
-.breadcrumb {
-  margin: -20px -5px 15px -5px;
-  border-radius: 0;
-  color: #666; }
-
-.tab-content {
-  padding: 10px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-top: 0; }
-
 /*
 Flaticon icon font: Flaticon
 Creation date: 19/02/2016 14:47
@@ -7415,8 +7404,12 @@ label {
   .panel .panel-body {
     background: #fff;
     padding: 10px 25px 25px 25px; }
-  .panel .table td {
+  .panel td {
+    color: #666;
     border-top: 1px solid #eee; }
+  .panel th {
+    color: #666;
+    font-weight: bold; }
 
 path {
   stroke: steelblue;

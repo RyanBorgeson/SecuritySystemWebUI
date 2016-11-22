@@ -21,11 +21,17 @@
     .panel-body {
         background: #fff;
         padding: 10px 25px 25px 25px;
+
+
     }
 
-    .table td {
+    td {
+        color: #666;
         border-top: 1px solid #eee;
     }
-
+    th {
+        color: #666;
+        font-weight: bold;
+    }
 
 }

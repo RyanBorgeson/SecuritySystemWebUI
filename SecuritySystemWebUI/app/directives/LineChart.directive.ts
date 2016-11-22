@@ -13,7 +13,7 @@ import { Directive, Input, OnChanges } from '@angular/core';
 export class LineChartDirective implements OnChanges {
 
     // Data object that contains graph information.
-    public Data: Array<{ Sales: number, TimeStamp: Date }>;
+    public Data: Array<{ AmbientLight: number, TimeStamp: Date }>;
 
     /**
      * Constructor for Line chart directive.
@@ -38,7 +38,7 @@ export class LineChartDirective implements OnChanges {
      * D3 library and display it.
      * @param Data Object containing sales and timestamp details.
      */
-    public Render(Data: Array<{ Sales: number, TimeStamp: Date }>) {
+    public Render(Data: Array<{ AmbientLight: number, TimeStamp: Date }>) {
         d3.select("#LineChart").selectAll("*").remove();
 
 
@@ -67,7 +67,7 @@ export class LineChartDirective implements OnChanges {
         var area = d3.svg.area()
             .x(function (d) { return x(d.TimeStamp); })
             .y0(height)
-            .y1(function (d) { return y(d.Sales); });
+            .y1(function (d) { return y(d.AmbientLight); });
 
         var yAxis = d3.svg.axis().scale(y)
             .orient("left")
@@ -78,9 +78,8 @@ export class LineChartDirective implements OnChanges {
 
         // Define the line
         var valueline = d3.svg.line()
-            .interpolate("cardinal")
             .x(function (d) { return x(d.TimeStamp); })
-            .y(function (d) { return y(d.Sales); });
+            .y(function (d) { return y(d.AmbientLight); });
 
         // Define the div for the tooltip
         var div = d3.select("#LineChart").append("div")
@@ -99,12 +98,12 @@ export class LineChartDirective implements OnChanges {
         // Get the data
             Data.forEach(function (d) {
                 d.TimeStamp = new Date(d.TimeStamp);
-                d.Sales = +d.Sales;
+                d.AmbientLight = +d.AmbientLight;
             });
             
             // Scale the range of the data
             x.domain(d3.extent(Data, function (d) { return d.TimeStamp; }));
-            y.domain([0, d3.max(Data, function (d) { return d.Sales; })]);
+            y.domain([0, d3.max(Data, function (d) { return d.AmbientLight; })]);
 
             // Add the X Axis
             svg.append("g")
@@ -135,7 +134,7 @@ export class LineChartDirective implements OnChanges {
                 .enter().append("circle")
                 .attr("r", 4)
                 .attr("cx", function (d) { return x(d.TimeStamp); })
-                .attr("cy", function (d) { return y(d.Sales); })
+                .attr("cy", function (d) { return y(d.AmbientLight); })
                 .on("mouseover", function (d) {
                     d3.select(this)
                         .transition()
